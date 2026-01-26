@@ -1,0 +1,17 @@
+br\edu\ifba\inf008\plugins\model\VehicleType.class
+br\edu\ifba\inf008\plugins\model\EletricVehicle.class
+br\edu\ifba\inf008\plugins\model\VehicleTypeFactory.class
+br\edu\ifba\inf008\plugins\dao\ClientDAO.class
+br\edu\ifba\inf008\plugins\model\TestConnection.class
+br\edu\ifba\inf008\plugins\dao\VehicleDAO.class
+br\edu\ifba\inf008\plugins\model\Client.class
+br\edu\ifba\inf008\plugins\model\EconomicVehicle.class
+br\edu\ifba\inf008\plugins\model\SuvVehicle.class
+br\edu\ifba\inf008\plugins\RentalPlugin.class
+br\edu\ifba\inf008\plugins\dao\DatabaseConnection.class
+br\edu\ifba\inf008\plugins\model\LuxuryVehicle.class
+br\edu\ifba\inf008\plugins\model\CompactVehicle.class
+br\edu\ifba\inf008\plugins\dao\RentalDAO.class
+br\edu\ifba\inf008\plugins\model\VanVehicle.class
+br\edu\ifba\inf008\plugins\model\Vehicle.class
+br\edu\ifba\inf008\plugins\model\Rental.class
