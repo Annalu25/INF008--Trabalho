@@ -567,6 +567,7 @@ Comandos (no Windows Powershell, a partir da pasta `microkernel`):
 
 ```powershell
 mvn -DskipTests clean package
+mvn compile install
 # Em seguida, executar a aplicação principal (se houver um main configurado no pom) ou rodar via IDE.
 mvn -pl app exec:java        
 ```
@@ -600,10 +601,3 @@ mvn -pl app exec:java
 
 
 ---
-
-Se deseja, eu posso:
-- Gerar um script SQL `init.sql` completo com dados de exemplo.
-- Atualizar a classe `Vehicle` para aceitar `id` vindo do BD e adaptar os pontos de leitura para usar `rs.getInt("id")`.
-- Mover as configurações de DB para variáveis de ambiente.
-
-Quer que eu aplique alguma dessas melhorias agora?

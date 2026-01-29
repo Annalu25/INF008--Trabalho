@@ -14,4 +14,4 @@ SELECT
     END AS chart_color
 FROM vehicles v
 GROUP BY v.fuel_type
-ORDER BY vehicle_count DESC;
+ORDER BY vehicle_count DESC

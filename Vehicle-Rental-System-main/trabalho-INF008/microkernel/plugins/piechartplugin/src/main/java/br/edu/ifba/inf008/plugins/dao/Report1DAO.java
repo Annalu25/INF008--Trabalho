@@ -10,7 +10,7 @@ import java.util.List;
 
 public class Report1DAO {
 
-    // Essa classe está pegando cada coisa que tem no relatório
+    // Essa classe está pegando cada linha que tem no relatório1.sql e transformando em um objeto Java
     public static class FuelReport {
         public String fuelType;
         public int vehicleCount;
@@ -22,11 +22,11 @@ public class Report1DAO {
 
     // Executa o report1.sql e retorna os dados para o java entender
     public List<FuelReport> getReportData() {
-
         List<FuelReport> list = new ArrayList<>();
 
+
         try (
-            Connection conn = DatabaseConnection.getConnection();
+            Connection conn = DataBaseConnection.getConnection();
             InputStream is = getClass()
                     .getResourceAsStream("/sql/report1.sql");
         ) {
@@ -52,12 +52,15 @@ public class Report1DAO {
                 fr.chartColor = rs.getString("chart_color");
 
                 list.add(fr);
+                // Dentro do while(rs.next()) do Report1DAO
+                System.out.println("Encontrado: " + fr.fuelType + " - Total: " + fr.vehicleCount);
             }
 
         } catch (Exception e) {
             e.printStackTrace();
         }
-
+        
         return list;
+
     }
 }

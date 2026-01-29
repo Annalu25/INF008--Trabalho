@@ -1,1 +1,4 @@
+br\edu\ifba\inf008\plugins\dao\DataBaseConnection.class
+br\edu\ifba\inf008\plugins\dao\Report1DAO.class
 br\edu\ifba\inf008\plugins\PieChartPlugin.class
+br\edu\ifba\inf008\plugins\dao\Report1DAO$FuelReport.class
